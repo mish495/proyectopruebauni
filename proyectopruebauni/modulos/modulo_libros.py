@@ -1,4 +1,5 @@
-from base_datos.conexion import conectar
+from proyectopruebauni.base_datos.conexion import conectar
+
 
 # ======================================================
 # FUNCION: registrar_libro()
