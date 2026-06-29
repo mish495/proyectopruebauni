@@ -66,7 +66,7 @@ def registrar_libro():
     finally:
         try:
             conexion.close()
-        except:
+        except Exception:
             pass
 
 
