@@ -1,6 +1,5 @@
 from proyectopruebauni.base_datos.conexion import conectar
 
-
 # ======================================================
 # FUNCION: registrar_libro()
 # QUE HACE:
@@ -66,7 +65,10 @@ def registrar_libro():
     finally:
         try:
             conexion.close()
-        except (NameError, AttributeError):  # <--- Esto apaga todas las alertas del linter
+        except (
+            NameError,
+            AttributeError,
+        ):  # <--- Esto apaga todas las alertas del linter
             pass
 
 
