@@ -66,7 +66,7 @@ def registrar_libro():
     finally:
         try:
             conexion.close()
-        except Exception:
+        except (NameError, AttributeError):  # <--- Esto apaga todas las alertas del linter
             pass
 
 
